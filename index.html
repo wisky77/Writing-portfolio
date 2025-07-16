@@ -1,33 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Lewis Anthony – Writing Portfolio</title>
   <style>
+    :root {
+      --bg-light: #f5f5f5;
+      --fg-dark: #222;
+      --accent: #007acc;
+      --card-bg: #ffffff;
+      --card-shadow: rgba(0, 0, 0, 0.06);
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--fg-dark);
       padding: 2rem;
-      background-color: #f5f5f5;
-      color: #222;
-      line-height: 1.6;
+      margin: 0;
+      line-height: 1.7;
     }
-    h1, h2 {
+
+    h1 {
+      color: var(--accent);
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
       color: #111;
+      font-size: 1.5rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.3rem;
     }
+
+    .intro {
+      max-width: 800px;
+      margin-bottom: 3rem;
+    }
+
     .sample {
+      max-width: 800px;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px var(--card-shadow);
       margin-bottom: 2rem;
-      background: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 4px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
+    .sample:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
     a {
-      color: #007acc;
+      color: var(--accent);
       text-decoration: none;
+      font-weight: 500;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Lewis Anthony – Writing Portfolio</h1>
+  <div class="intro">
+    <p>Welcome to my collection of curated writing — from case studies and reflective articles to bold opinion columns and poetic insights. Each piece is a different lens on story, strategy, or soul. Explore the samples below.</p>
+  </div>
   </style>
 </head>
 <body>
